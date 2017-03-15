@@ -6,7 +6,7 @@
 		select * from feng.location;
 	</select>
 	
-	<!-- <select id="loging" parameterType="java.util.Map" resultType="java.util.Map">
-		select id, username, `password`, `name` from tellyou.yys_usr where username=#{username} and `password`=#{password};
-	</select> -->
+	 <select id="loging" parameterType="java.util.Map" resultType="java.util.Map">
+		 select id from feng.usr where username='bxf' and `password`='123456'
+	</select> 
 </mapper>
