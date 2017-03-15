@@ -3,10 +3,10 @@
 <mapper namespace="com.eht.hg.mybatis.OrderMapper">
 
 	<select id="getDownroadLiat" parameterType="java.util.Map" resultType="java.util.Map">
-		select id, `type`, `language`, `name`, infonm, `file`, sha1, size, creatime, url from tellyou.location;
+		select * from feng.location;
 	</select>
 	
-	<select id="loging" parameterType="java.util.Map" resultType="java.util.Map">
+	<!-- <select id="loging" parameterType="java.util.Map" resultType="java.util.Map">
 		select id, username, `password`, `name` from tellyou.yys_usr where username=#{username} and `password`=#{password};
-	</select>
+	</select> -->
 </mapper>
