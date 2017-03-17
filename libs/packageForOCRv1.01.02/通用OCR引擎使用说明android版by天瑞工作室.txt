@@ -1,0 +1,4 @@
+第一步 拷贝文件夹“armeabi”到libs目录下。
+第二步 拷贝文件“TianruiWorkroomOCR.jar”到libs目录下，导入到工程中。
+第三步 拷贝文件“TianruiWorkroomOCR.dat”到手机目录下，并把路径名传给函数“Native.openOcrEngine()”（注意：例如文件保存到手机目录“/storage/emulated/0/ocr/TianruiWorkroomOCR.dat”则传递Native.openOcrEngine("/storage/emulated/0/ocr")，只需要传递给文件夹名即可。）。
+识别核心技术支持by www.ocrspace.com

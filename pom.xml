@@ -34,7 +34,14 @@
     </properties>
 
     <!-- Add typical dependencies for a web application -->
+    
     <dependencies>
+    	<!-- qiniu依赖包 -->
+   	 	<dependency>
+            <groupId>com.qiniu</groupId>
+            <artifactId>qiniu-java-sdk</artifactId>
+            <version>7.1.0</version>
+        </dependency>
         <!-- <dependency>
           <groupId>com.eht.hg</groupId>
           <artifactId>ehg-common</artifactId>
@@ -88,16 +95,16 @@
         </dependency>
         
         <!--activemq-->
-        <!-- 
+        
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-jms</artifactId>
         </dependency>
-        <dependency>
+        <!-- <dependency>
             <groupId>org.apache.activemq</groupId>
             <artifactId>activemq-broker</artifactId>
-        </dependency>
-        -->
+        </dependency> -->
+
         <!--redis+session-->
         <!-- 
         <dependency>

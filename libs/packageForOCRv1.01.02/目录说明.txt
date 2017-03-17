@@ -1,0 +1,11 @@
+1 文件夹“armeabi”保存通用OCR-SDK的Android动态库，需要把整个文件夹拷贝到工程的libs目录下。
+
+2 文件“DemoTianruiWorkroomOCR.apk”为通用OCR-SDK的Demo，可安装在安卓系统手机上运行，运行前需要在手机根目录下建立文件夹“tianrui”并把文件“TianruiWorkroomOCR.dat”拷贝到该文件夹下。
+
+3 压缩包“DemoTianruiWorkroomOCR.rar”保存Android DEMO的工程文件，可导入到eclipse运行，运行前需要在手机根目录下建立文件夹“tianrui”并把文件“TianruiWorkroomOCR.dat”拷贝到该文件夹下。
+
+4 文件“TianruiWorkroomOCR.dat”保存的是OCR模板库文件，需要拷贝到手机上，并把路径名作为参数传递给函数Native.openOcrEngine();//例如文件保存到手机目录“/storage/emulated/0/ocr/TianruiWorkroomOCR.dat”则传递Native.openOcrEngine("/storage/emulated/0/ocr");
+
+5 文件“TianruiWorkroomOCR.jar”需要拷贝到工程的libs目录下。
+
+6 识别核心技术支持by www.ocrspace.com
