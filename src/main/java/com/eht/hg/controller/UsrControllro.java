@@ -19,10 +19,10 @@ import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @Controller
-@RequestMapping(value = "/assis")
+@RequestMapping(value = "/uplod")
 public class UsrControllro {
 
-	@RequestMapping(value = "/portait/upload", method = RequestMethod.POST)
+	@RequestMapping(value = "/usr", method = RequestMethod.POST)
 	public JsonResult uploadFile(@RequestHeader HttpHeaders httpHeaders,
 			@RequestParam("uploadfile") MultipartFile uploadfile) throws Exception {
 		JsonResult result = new JsonResult();

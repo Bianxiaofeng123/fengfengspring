@@ -29,7 +29,7 @@ public class Constants {
 	public static final String BAIDU_OCR_SECRET_KEY = "39yfKa49bmMFyjPHxtZg4v95ygeny5C1";
 	// AK_ID
 	public static final String BAIDU_OCR_ACCESS_KEY_ID = "ef503624977f4a198a0e1b2e2c0b3c9e";
-
+	//检测朝向
 	public static final String BAIDU_OCR_DETECT_DIRECTION = "false";
 	// 语言
 	// - CHN_ENG：中英文混合；
