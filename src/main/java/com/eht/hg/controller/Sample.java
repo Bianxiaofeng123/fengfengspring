@@ -3,27 +3,19 @@ package com.eht.hg.controller;
 import java.util.HashMap;
 
 import org.json.JSONObject;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import com.baidu.aip.ocr.AipOcr;
+import com.eht.hg.Constants;
 
 public class Sample {
-	private Logger log = LoggerFactory.getLogger(Sample.class);
 
-	// 设置APPID/AK/SK
-	public static final String APP_ID = "9402809";
-	public static final String API_KEY = "svWDc1plyHgWlKD2MmGf9nG0";
-	public static final String SECRET_KEY = "39yfKa49bmMFyjPHxtZg4v95ygeny5C1";
-	public static final String ACCESS_KEY_ID = "ef503624977f4a198a0e1b2e2c0b3c9e";
-	public static final String HTTPURL = "https://aip.baidubce.com/rest/2.0/ocr/v1/general";
-	public static final String TOKENURL = "https://aip.baidubce.com/oauth/2.0/token";
+	
 
 	public static void main(String[] args) {
 		// RestTemplate restTemplate = new RestTemplate();
 		// Gson gson = new Gson();
 		// 初始化一个OcrClient
-		AipOcr client = new AipOcr(APP_ID, API_KEY, SECRET_KEY);
+		AipOcr client = new AipOcr(Constants.BAIDU_OCR_APP_ID, Constants.BAIDU_OCR_API_KEY, Constants.BAIDU_OCR_SECRET_KEY);
 		// 可选：设置网络连接参数
 		client.setConnectionTimeoutInMillis(2000);
 		client.setSocketTimeoutInMillis(60000);
@@ -39,9 +31,9 @@ public class Sample {
 		// 调用通用识别接口
 		// 自定义参数定义
 		HashMap<String, String> options = new HashMap<String, String>();
-		options.put("detect_direction", "false");
-		options.put("language_type", "JAP");
-
+		options.put("detect_direction", Constants.BAIDU_OCR_DETECT_DIRECTION);
+		options.put("language_type", Constants.BAIDU_OCR_LANGUAGE_TYPE);
+		
 		String genFilePath = "D://book-ps.jpg";
 		JSONObject genRes = client.general(genFilePath, options);
 		System.out.println(genRes.toString(2));
