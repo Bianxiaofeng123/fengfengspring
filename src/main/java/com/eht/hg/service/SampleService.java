@@ -43,7 +43,6 @@ public class SampleService {
 			if (genRes == null) {
 				return list;
 			}
-			log.info("genRes------->" + genRes.toString(2));
 			jsonstr = genRes.toString(2);
 			// 参数为本地图片文件二进制数组
 			// byte[] file = readImageFile(imagePath);
@@ -57,7 +56,6 @@ public class SampleService {
 			if (idcardRes == null) {
 				return list;
 			}
-			log.info("genRes------->" + idcardRes.toString(2));
 			jsonstr = idcardRes.toString(2);
 		} else if (params != null && params.get("type") != null
 				&& Integer.parseInt(params.get("type").toString()) == 2) {
@@ -66,7 +64,6 @@ public class SampleService {
 			if (bankRes == null) {
 				return list;
 			}
-			log.info("genRes------->" + bankRes.toString(2));
 			jsonstr = bankRes.toString(2);
 		} else {
 			return list;
@@ -79,12 +76,10 @@ public class SampleService {
 	}
 
 	// 图片转二进制字符集
-	/*public byte[] SetImageToByteArray(String fileName) {
-		FileStream fs = new FileStream(fileName, FileMode.Open);
-		int streamLength = (int) fs.Length;
-		byte[] image = new byte[streamLength];
-		fs.Read(image, 0, streamLength);
-		fs.Close();
-		return image;
-	}*/
+	/*
+	 * public byte[] SetImageToByteArray(String fileName) { FileStream fs = new
+	 * FileStream(fileName, FileMode.Open); int streamLength = (int) fs.Length;
+	 * byte[] image = new byte[streamLength]; fs.Read(image, 0, streamLength);
+	 * fs.Close(); return image; }
+	 */
 }

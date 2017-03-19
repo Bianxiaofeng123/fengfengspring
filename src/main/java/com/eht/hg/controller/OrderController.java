@@ -20,7 +20,6 @@ import com.eht.hg.service.OrderService;
 public class OrderController {
 	@Autowired
 	OrderService orderService;
-//	@RequestParam Map<String, Object> parmas,@RequestHeader HttpHeaders httpHeaders
 	
 	/**
 	 * 查看所有下载地址
